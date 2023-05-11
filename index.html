@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/index.css">
+    <title>Currency Converter</title>
+</head>
+<body>
+    <h1>Currency Converter</h1>
+    <form id='conForm' action='/convert' method="POST">
+          <label for="inCurr">Converting from:</label>
+          <input type="text" id="inCurr"name='from'>
+          
+          <label for="outCurr">Converting to:</label>
+          <input type="text" id="outCurr"name='to'>
+          
+          <label for="amt">Amount:</label>
+          <input type="text" id="amt"name='amt'>
+          <br>
+          <br>
+          <h1 id="err"></h1>
+          <input type="submit" value="Convert">
+    </form>
+</body>
+</html>
